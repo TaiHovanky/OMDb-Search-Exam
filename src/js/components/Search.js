@@ -1,5 +1,6 @@
 import React from 'react';
-import { InputGroup, Button, FormControl, HelpBlock, FormGroup, ControlLabel, Grid, Row, Col, Media } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, FormControl, FormGroup } from 'react-bootstrap';
+require('../../styles/searchStyles.css');
 
 export default class Search extends React.Component{
   search(e){
@@ -8,7 +9,8 @@ export default class Search extends React.Component{
 
   render() {
     return (
-      <Col md={8} mdOffset={2}>
+      <Navbar inverse fixedTop>
+        <h1 className='mainTitle'>CINESEARCH</h1>
         <form>
           <FormGroup controlId="formBasicText">
             <FormControl 
@@ -19,7 +21,7 @@ export default class Search extends React.Component{
             </FormControl>
           </FormGroup>
         </form>
-      </Col>
+      </Navbar>
     )
   }
 }

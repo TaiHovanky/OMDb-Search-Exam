@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from './Title';
-import { Col, Grid, Row } from 'react-bootstrap'
+require('../../styles/titlesListStyles.css');
 
 const TitlesList = (props) => {
   var movieList = [];
@@ -10,11 +10,9 @@ const TitlesList = (props) => {
     })
   }
   return (
-    <Col md={8} mdOffset={2}>
-      <ul>
-        {movieList}
-      </ul>
-    </Col>
+    <ul className='titlesList'>
+      {movieList}
+    </ul>
   )
 }
 

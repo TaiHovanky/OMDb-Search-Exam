@@ -4,6 +4,7 @@ import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import Search from './components/Search';
 import TitlesList from './components/TitlesList'
 import getMovies from './helpers/getMovies';
+import { Col, Grid, Row } from 'react-bootstrap'
 
 class App extends React.Component{
   constructor(props){
@@ -20,16 +21,12 @@ class App extends React.Component{
     }, getMovies);
   }
 
-  componentDidMount() {
-    this.findMovies(this.state.search);
-  }
-
   render() {
     return (
-      <div>
+      <Col md={8} mdOffset={2}>
         <Search findMovies={this.findMovies.bind(this)}/>
         <TitlesList movies={this.state.movies} />
-      </div>
+      </Col>
     )
   }
 }
