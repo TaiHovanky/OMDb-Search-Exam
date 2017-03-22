@@ -1,6 +1,7 @@
 import React from 'react';
 import Details from './Detail';
-import getDetails from '../helpers/getDetails'
+import getDetails from '../helpers/getDetails';
+require('../../styles/titleStyles.css');
 
 export default class Title extends React.Component{
   constructor(props) {
@@ -23,7 +24,13 @@ export default class Title extends React.Component{
         className='well' 
         onClick={this.displayDetails.bind(this)}
       >
-        <h3>{this.props.movie.Title}</h3>
+        {!this.state.showDetails && <img src={this.props.movie.Poster} className='filmThumb' />}
+        <h3 className={!this.state.showDetails ? 'filmTitle' : undefined}>
+          {this.props.movie.Title}
+        </h3>
+        <p className={!this.state.showDetails ? 'filmYear': undefined}>
+          {this.props.movie.Year}
+        </p>
         {this.state.showDetails && <Details movieDetails={this.state.movieDetails} />}
       </div>
     )

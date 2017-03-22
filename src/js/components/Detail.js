@@ -4,7 +4,6 @@ const Details = (props) => {
   if(props.movieDetails){
     return (
       <div>
-        {props.movieDetails.Year && <p>({props.movieDetails.Year})</p>}
         {props.movieDetails.Genre && <p>{props.movieDetails.Genre}</p>}
         {props.movieDetails.Plot && <p>{props.movieDetails.Plot}</p>}
         {props.movieDetails.Poster && <img src={props.movieDetails.Poster} />}

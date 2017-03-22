@@ -1,0 +1,17 @@
+.filmThumb {
+  max-width: 65px;
+  height: auto;
+  float: left;
+}
+
+.well {
+  padding-bottom: 30px;
+}
+
+.filmTitle {
+  padding-left: 100px;
+}
+
+.filmYear {
+  padding-left: 100px;
+}
