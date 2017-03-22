@@ -46,3 +46,9 @@ http://www.omdbapi.com/?s=ghost&page=2 //  results 11-20
 http://www.omdbapi.com/?i=tt1229238
 ```
 - Using the `imdbID` provided by the search results will let you fetch the details of a particular movie.
+
+
+### Start the application
+- Open a terminal window and navigate to the OMDb-Search-Exam directory. Run the 'webpack' command.
+- Open another terminal window and navigate to the OMDb-Search-Exam/server directory. Run the 'nodemon index.js' command.
+- In your browser, navigate to http://localhost:3000.

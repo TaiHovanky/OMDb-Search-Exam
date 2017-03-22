@@ -1,0 +1,9 @@
+# ignore folders
+node_modules
+src/bundle.js
+*.ttf
+*.eot
+*.woff
+*.woff2
+*.svg
+debug.log
