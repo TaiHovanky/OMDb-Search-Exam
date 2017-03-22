@@ -6,6 +6,10 @@
 
 .well {
   padding-bottom: 30px;
+  margin-bottom: 40px;
+  background-color: #464E54;
+  color: #EDEDED;
+  border: 3px solid #CAA37E;
 }
 
 .filmTitle {
