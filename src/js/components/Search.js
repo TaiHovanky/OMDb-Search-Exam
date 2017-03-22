@@ -3,7 +3,6 @@ import { InputGroup, Button, FormControl, HelpBlock, FormGroup, ControlLabel, Gr
 
 export default class Search extends React.Component{
   search(e){
-    console.log('e target', e.target.value);
     this.props.findMovies(e.target.value);
   }
 
