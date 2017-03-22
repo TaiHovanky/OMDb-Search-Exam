@@ -1,24 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import Search from './components/Search';
-
-//Load bootstrap css
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
-
-function getMovies() {
-  axios.get(`http://www.omdbapi.com/?s=${this.state.search}`)
-    .then(results => {
-      console.log('results from search', results);
-      return;
-    });
-}
+import Search from './components/Search';
+import TitlesList from './components/TitlesList'
+import getMovies from './helpers/getMovies';
 
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      search: ''
+      search: '',
+      movies: []
     }
   }
 
@@ -37,7 +29,9 @@ class App extends React.Component{
       <div>
         <h1>Hello Movie Madness!!!</h1>
         <Search findMovies={this.findMovies.bind(this)}/>
-        <h3>{this.state.search}</h3>
+        <div>
+          <TitlesList movies={this.state.movies} />
+        </div>
       </div>
     )
   }
