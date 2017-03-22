@@ -1,5 +1,6 @@
 import React from 'react';
 import Title from './Title';
+import { Col, Grid, Row } from 'react-bootstrap'
 
 const TitlesList = (props) => {
   var movieList = [];
@@ -9,9 +10,11 @@ const TitlesList = (props) => {
     })
   }
   return (
-    <ul>
-      {movieList}
-    </ul>
+    <Col md={8} mdOffset={2}>
+      <ul>
+        {movieList}
+      </ul>
+    </Col>
   )
 }
 

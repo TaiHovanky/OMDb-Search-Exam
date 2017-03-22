@@ -27,11 +27,8 @@ class App extends React.Component{
   render() {
     return (
       <div>
-        <h1>Hello Movie Madness!!!</h1>
         <Search findMovies={this.findMovies.bind(this)}/>
-        <div>
-          <TitlesList movies={this.state.movies} />
-        </div>
+        <TitlesList movies={this.state.movies} />
       </div>
     )
   }

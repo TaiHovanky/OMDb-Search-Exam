@@ -8,20 +8,18 @@ export default class Search extends React.Component{
 
   render() {
     return (
-      <div>
-        <Col md={8} mdOffset={2}>
-          <form>
-            <FormGroup controlId="formBasicText">
-              <FormControl 
-                type='text'
-                placeholder='Find a movie'
-                onChange={this.search.bind(this)}
-              >
-              </FormControl>
-            </FormGroup>
-          </form>
-        </Col>
-      </div>
+      <Col md={8} mdOffset={2}>
+        <form>
+          <FormGroup controlId="formBasicText">
+            <FormControl 
+              type='text'
+              placeholder='Find a movie'
+              onChange={this.search.bind(this)}
+            >
+            </FormControl>
+          </FormGroup>
+        </form>
+      </Col>
     )
   }
 }
