@@ -2,6 +2,7 @@ import React from 'react';
 require('../../styles/titleStyles.css');
 
 const About = () => {
+  //displays when the user hasn't typed anything into the search bar
   return (
     <div className='well none'>
       <h3>Find your favorite movies...</h3>

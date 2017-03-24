@@ -3,6 +3,7 @@ import Expand from './Expand';
 require('../../styles/titleStyles.css');
 
 const Title = (props) => {
+  //positioning of the Title component depends on if there is a poster thumbnail
   return (
     <h3
       className={props.showDetails ? 'titleDetail' : props.poster !== 'N/A' ? 'filmTitle' : 'titleDetail'}

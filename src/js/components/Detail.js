@@ -2,6 +2,7 @@ import React from 'react';
 require('../../styles/titleStyles.css');
 
 const Details = (props) => {
+  //if any movie detail field is equal to 'N/A', there's no need to display it
   if(props.movieDetails){
     return (
       <div className='filmDetail'>
@@ -11,12 +12,12 @@ const Details = (props) => {
         {props.movieDetails.Director !== 'N/A' && <p>Director: {props.movieDetails.Director}</p>}
         {props.movieDetails.Actors !== 'N/A' && <p>Stars: {props.movieDetails.Actors}</p>}
         <div className='imdbLink'>
-        <a 
-          href={`http://imdb.com/title/${props.movieDetails.imdbID}`} 
-          target='_blank'
-        >
-          See this movie's IMDB page
-        </a>
+          <a 
+            href={`http://imdb.com/title/${props.movieDetails.imdbID}`} 
+            target='_blank'
+          >
+            See this movie's IMDB page
+          </a>
         </div>
       </div>
     );

@@ -49,6 +49,8 @@ http://www.omdbapi.com/?i=tt1229238
 
 
 ### Start the application
-- Open a terminal window and navigate to the OMDb-Search-Exam directory. Run the 'webpack' command.
+- Open a terminal window and navigate to the OMDb-Search-Exam directory. 
+- Run the 'npm install' command to install all dependencies.
+- Run the 'webpack' command.
 - Open another terminal window and navigate to the OMDb-Search-Exam/server directory. Run the 'nodemon index.js' command.
 - In your browser, navigate to http://localhost:3000.
