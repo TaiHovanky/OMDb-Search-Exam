@@ -6,7 +6,7 @@ const Title = (props) => {
   //positioning of the Title component depends on if there is a poster thumbnail
   return (
     <h3
-      className={props.showDetails ? 'titleDetail' : props.poster !== 'N/A' ? 'filmTitle' : 'titleDetail'}
+      className={props.showDetails ? 'noPoster' : props.poster !== 'N/A' ? 'hasPosterThumb' : 'noPoster'}
       onClick={props.displayDetails.bind(this)}
     >
       <Expand showDetails={props.showDetails} />

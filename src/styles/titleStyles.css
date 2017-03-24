@@ -5,7 +5,7 @@
   float: left;
   margin-left: 50px;
   margin-top: 5px;
-}
+} /*for poster thumbnail */
 
 h3 {
   cursor: pointer;
@@ -17,26 +17,26 @@ h3 {
   margin-bottom: 40px;
   background-color: #252834;
   color: #EDEDED;
-  border-left: 3px solid #CAA37E;
-  border-right: 3px solid #CAA37E;
+  border-left: 5px solid #CAA37E;
+  border-right: 5px solid #CAA37E;
 }
 
 .none {
   margin-top: 200px; 
-}
+} /*used whenever no search results available */
 
-.filmTitle {
+.hasPosterThumb {
   padding-left: 150px;
-}
+} /*used whenever a poster thumbnail is present for a search result */
 
-.titleDetail {
+.noPoster {
   padding-left: 50px;
-}
+} /*used whenever no poster thumbnail is present for a search result */
 
 .filmDetail {
   padding-left: 50px;
   padding-right: 45px;
-}
+} /*used whenever movie details are displayed */
 
 p {
   margin-top: 15px;
@@ -48,19 +48,19 @@ p {
   margin-bottom: 5px;
   max-height: 300px;
   width: auto;
-}
+} /*full-sized poster image in movie details */
 
 .expand {
   float: right;
   font-size: 30px;
   margin-right: 45px;
   margin-top: -3px;
-}
+} /*menu-up/down glyphicon span */
 
 .imdbLink {
   margin-top: 15px;
   padding-bottom: 10px;
-}
+} /*link to the movie page on IMDB */
 
 a {
   color: #5eabee;
