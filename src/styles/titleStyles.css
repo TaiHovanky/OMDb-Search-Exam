@@ -4,6 +4,7 @@
   max-height: 95px;
   float: left;
   margin-left: 50px;
+  margin-top: 5px;
 }
 
 .well {
@@ -21,4 +22,8 @@
 .filmDetail {
   padding-left: 50px;
   padding-right: 45px;
+}
+
+p {
+  margin-top: 15px;
 }
