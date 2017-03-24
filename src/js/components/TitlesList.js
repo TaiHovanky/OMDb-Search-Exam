@@ -1,12 +1,12 @@
 import React from 'react';
-import Title from './Title';
+import Movie from './Movie';
 require('../../styles/titlesListStyles.css');
 
 const TitlesList = (props) => {
   var movieList = [];
   if(props.movies) {
     movieList = props.movies.map(movie => {
-      return <Title key={movie.imdbID} movie={movie} />
+      return <Movie key={movie.imdbID} movie={movie} />
     })
   }
   return (
