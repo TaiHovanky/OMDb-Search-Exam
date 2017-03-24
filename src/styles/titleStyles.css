@@ -1,7 +1,9 @@
 .filmThumb {
   max-width: 65px;
   height: auto;
+  max-height: 95px;
   float: left;
+  margin-left: 50px;
 }
 
 .well {
@@ -13,9 +15,10 @@
 }
 
 .filmTitle {
-  padding-left: 100px;
+  padding-left: 150px;
 }
 
-.filmYear {
-  padding-left: 100px;
+.filmDetail {
+  padding-left: 50px;
+  padding-right: 45px;
 }

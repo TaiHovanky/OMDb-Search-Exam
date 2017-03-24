@@ -29,10 +29,10 @@ export default class Title extends React.Component{
         {!this.state.showDetails &&
          this.props.movie.Poster !== 'N/A' &&
          <img src={this.props.movie.Poster} className='filmThumb' />}
-        <h3 className={!this.state.showDetails ? 'filmTitle' : undefined}>
+        <h3 className={!this.state.showDetails ? 'filmTitle' : 'filmDetail'}>
           {this.props.movie.Title}
         </h3>
-        <p className={!this.state.showDetails ? 'filmTitle': undefined}>
+        <p className={!this.state.showDetails ? 'filmTitle': 'filmDetail'}>
           {this.props.movie.Year}
         </p>
         {this.state.loading && <Loader />}

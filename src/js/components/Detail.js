@@ -1,9 +1,10 @@
 import React from 'react';
+require('../../styles/titleStyles.css');
 
 const Details = (props) => {
   if(props.movieDetails){
     return (
-      <div>
+      <div className='filmDetail'>
         {props.movieDetails.Genre && <p>{props.movieDetails.Genre}</p>}
         {props.movieDetails.Plot && <p>{props.movieDetails.Plot}</p>}
         {props.movieDetails.Poster !== 'N/A' && <img src={props.movieDetails.Poster} />}
