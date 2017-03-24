@@ -2,6 +2,7 @@ import React from 'react';
 import Loader from './Loader';
 import Details from './Detail';
 import Title from './Title';
+import PosterThumbnail from './PosterThumbnail';
 import getDetails from '../helpers/getDetails';
 require('../../styles/titleStyles.css');
 
@@ -24,14 +25,13 @@ export default class Movie extends React.Component{
   render() {
     return (
       <div className='well'>
-        {!this.state.showDetails &&
-         this.props.movie.Poster !== 'N/A' &&
-         <img 
-          src={this.props.movie.Poster} 
-          className='filmThumb' 
-        />}
+         <PosterThumbnail 
+          showDetails={this.state.showDetails}
+          poster={this.props.movie.Poster} 
+        />
         <Title 
           title={this.props.movie.Title}
+          poster={this.props.movie.Poster}
           showDetails={this.state.showDetails}
           displayDetails={this.displayDetails.bind(this)}
         />

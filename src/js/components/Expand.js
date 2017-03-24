@@ -4,9 +4,9 @@ require('../../styles/titleStyles.css');
 
 const Expand = (props) => {
   return (
-    <div className='expand'>
+    <span className='expand'>
       {props.showDetails ? <Glyphicon glyph='menu-up' /> : <Glyphicon glyph='menu-down' />}
-    </div>
+    </span>
   );
 }
 

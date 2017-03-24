@@ -44,7 +44,7 @@ p {
 /*.expand {
   text-align: center;
 }*/
-span {
+.expand {
   float: right;
   font-size: 30px;
   margin-right: 45px;
