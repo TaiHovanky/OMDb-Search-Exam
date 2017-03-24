@@ -5,7 +5,9 @@ export default function getMovies() {
     .then(results => {
       console.log('results from search', results.data.Search);
       this.setState({
-        movies: results.data.Search
+        movies: results.data.Search || []
+      }, () => {
+        console.log('new state', this.state)
       });
       return;
     });

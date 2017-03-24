@@ -1,6 +1,7 @@
 import React from 'react';
 import Loader from './Loader';
 import Details from './Detail';
+import Expand from './Expand';
 import getDetails from '../helpers/getDetails';
 require('../../styles/titleStyles.css');
 
@@ -22,14 +23,15 @@ export default class Title extends React.Component{
 
   render() {
     return (
-      <div 
-        className='well' 
-        onClick={this.displayDetails.bind(this)}
-      >
+      <div className='well'>
         {!this.state.showDetails &&
          this.props.movie.Poster !== 'N/A' &&
          <img src={this.props.movie.Poster} className='filmThumb' />}
-        <h3 className={!this.state.showDetails ? 'filmTitle' : 'filmDetail'}>
+        <h3 
+          className={!this.state.showDetails ? 'filmTitle' : 'titleDetail'}
+          onClick={this.displayDetails.bind(this)}
+        >
+          <Expand showDetails={this.state.showDetails} />
           {this.props.movie.Title}
         </h3>
         <p className={!this.state.showDetails ? 'filmTitle': 'filmDetail'}>

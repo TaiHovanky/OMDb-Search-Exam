@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import Search from './components/Search';
-import TitlesList from './components/TitlesList'
+import About from './components/About';
+import TitlesList from './components/TitlesList';
+import NoResults from './components/NoResults';
 import getMovies from './helpers/getMovies';
 import { Col, Grid, Row } from 'react-bootstrap'
 
@@ -25,7 +27,8 @@ class App extends React.Component{
     return (
       <Col md={8} mdOffset={2}>
         <Search findMovies={this.findMovies.bind(this)}/>
-        <TitlesList movies={this.state.movies} />
+        {this.state.search.length === 0 && <About />}
+        {this.state.movies.length > 0 ? <TitlesList movies={this.state.movies} /> : this.state.search.length > 0 ? <NoResults search={this.state.search} /> : undefined}
       </Col>
     )
   }

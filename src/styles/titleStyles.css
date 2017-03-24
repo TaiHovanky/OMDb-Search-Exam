@@ -7,6 +7,11 @@
   margin-top: 5px;
 }
 
+h3 {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .well {
   padding-bottom: 30px;
   margin-bottom: 40px;
@@ -15,8 +20,16 @@
   border: 3px solid #CAA37E;
 }
 
+.none {
+  margin-top: 200px; 
+}
+
 .filmTitle {
   padding-left: 150px;
+}
+
+.titleDetail {
+  padding-left: 50px;
 }
 
 .filmDetail {
@@ -26,4 +39,14 @@
 
 p {
   margin-top: 15px;
+}
+
+/*.expand {
+  text-align: center;
+}*/
+span {
+  float: right;
+  font-size: 30px;
+  margin-right: 45px;
+  margin-top: -3px;
 }
