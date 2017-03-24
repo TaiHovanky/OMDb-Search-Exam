@@ -4,7 +4,7 @@ require('../../styles/titleStyles.css');
 
 const Title = (props) => {
   return (
-    <h3 
+    <h3
       className={props.showDetails ? 'titleDetail' : props.poster !== 'N/A' ? 'filmTitle' : 'titleDetail'}
       onClick={props.displayDetails.bind(this)}
     >

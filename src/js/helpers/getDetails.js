@@ -15,7 +15,6 @@ export default function getDetails() {
     } else {
       axios.get(`http://www.omdbapi.com/?i=${imdbID}`)
         .then(results => {
-          console.log('results', results)
           this.setState({
             movieDetails: results.data,
             loading: false
