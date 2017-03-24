@@ -3,6 +3,7 @@ import Loader from './Loader';
 import Details from './Detail';
 import Title from './Title';
 import PosterThumbnail from './PosterThumbnail';
+import Year from './Year';
 import getDetails from '../helpers/getDetails';
 require('../../styles/titleStyles.css');
 
@@ -35,9 +36,11 @@ export default class Movie extends React.Component{
           showDetails={this.state.showDetails}
           displayDetails={this.displayDetails.bind(this)}
         />
-        <p className={!this.state.showDetails ? 'filmTitle': 'filmDetail'}>
-          {this.props.movie.Year}
-        </p>
+        <Year
+          poster={this.props.movie.Poster}
+          showDetails={this.state.showDetails}
+          year={this.props.movie.Year}
+        />
         {this.state.loading && <Loader />}
         {this.state.showDetails && <Details movieDetails={this.state.movieDetails} />}
       </div>
