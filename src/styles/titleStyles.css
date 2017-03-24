@@ -15,9 +15,10 @@ h3 {
 .well {
   padding-bottom: 30px;
   margin-bottom: 40px;
-  background-color: #44475A;
+  background-color: #252834;
   color: #EDEDED;
-  border: 3px solid #CAA37E;
+  border-left: 3px solid #CAA37E;
+  border-right: 3px solid #CAA37E;
 }
 
 .none {
@@ -41,12 +42,25 @@ p {
   margin-top: 15px;
 }
 
-/*.expand {
-  text-align: center;
-}*/
+.poster {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  max-height: 300px;
+  width: auto;
+}
+
 .expand {
   float: right;
   font-size: 30px;
   margin-right: 45px;
   margin-top: -3px;
+}
+
+.imdbLink {
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+
+a {
+  color: #5eabee;
 }

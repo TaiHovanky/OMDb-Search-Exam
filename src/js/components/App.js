@@ -5,7 +5,7 @@ import About from './About';
 import TitlesList from './TitlesList';
 import NoResults from './NoResults';
 import getMovies from '../helpers/getMovies';
-import { Col, Grid, Row } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 
 export default class App extends React.Component{
   constructor(props){

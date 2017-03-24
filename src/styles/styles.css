@@ -1,6 +1,6 @@
 
 body {
-  background: url('../film.jpeg') no-repeat center center fixed;
+  background: url('../assets/film.jpeg') no-repeat center center fixed;
   height: 100%;
   background-attachment: fixed;
   -webkit-background-size: cover;

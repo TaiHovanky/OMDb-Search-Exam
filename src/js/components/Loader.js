@@ -3,7 +3,7 @@ import React from 'react';
 const Loader = () => {
   return (
     <div>
-      <img src='../loading.gif' />
+      <img src='../../assets/loading.gif' />
     </div>
   );
 }
