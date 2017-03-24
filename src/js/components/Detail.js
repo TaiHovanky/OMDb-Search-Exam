@@ -6,7 +6,7 @@ const Details = (props) => {
       <div>
         {props.movieDetails.Genre && <p>{props.movieDetails.Genre}</p>}
         {props.movieDetails.Plot && <p>{props.movieDetails.Plot}</p>}
-        {props.movieDetails.Poster && <img src={props.movieDetails.Poster} />}
+        {props.movieDetails.Poster !== 'N/A' && <img src={props.movieDetails.Poster} />}
         {props.movieDetails.Director && <p>Director: {props.movieDetails.Director}</p>}
         {props.movieDetails.Actors && <p>Stars: {props.movieDetails.Actors}</p>}
         <a 
