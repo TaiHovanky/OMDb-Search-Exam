@@ -19,6 +19,8 @@ h3 {
   color: #EDEDED;
   border-left: 5px solid #CAA37E;
   border-right: 5px solid #CAA37E;
+  border-top: 2px solid #252834;
+  border-bottom: 2px solid #252834;
 }
 
 .none {
@@ -32,6 +34,10 @@ h3 {
 .noPoster {
   padding-left: 50px;
 } /*used whenever no poster thumbnail is present for a search result */
+
+.loader {
+  padding-left: 50px;
+}
 
 .filmDetail {
   padding-left: 50px;

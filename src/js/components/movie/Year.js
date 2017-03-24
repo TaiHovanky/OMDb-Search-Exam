@@ -1,5 +1,5 @@
 import React from 'react';
-require('../../styles/titleStyles.css');
+require('../../../styles/movieStyles.css');
 
 const Year = (props) => {
   //positioning of the Year component depends on if there is a poster thumbnail

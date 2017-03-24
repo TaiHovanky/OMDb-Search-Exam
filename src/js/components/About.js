@@ -1,5 +1,5 @@
 import React from 'react';
-require('../../styles/titleStyles.css');
+require('../../styles/movieStyles.css');
 
 const About = () => {
   //displays when the user hasn't typed anything into the search bar

@@ -1,6 +1,6 @@
 import React from 'react';
 import Expand from './Expand';
-require('../../styles/titleStyles.css');
+require('../../../styles/movieStyles.css');
 
 const Title = (props) => {
   //positioning of the Title component depends on if there is a poster thumbnail

@@ -1,5 +1,5 @@
 import React from 'react';
-require('../../styles/titleStyles.css');
+require('../../../styles/movieStyles.css');
 
 const Details = (props) => {
   //if any movie detail field is equal to 'N/A', there's no need to display it

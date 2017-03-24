@@ -1,6 +1,6 @@
 import React from 'react';
 import { Glyphicon } from 'react-bootstrap';
-require('../../styles/titleStyles.css');
+require('../../../styles/movieStyles.css');
 
 const Expand = (props) => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-require('../../styles/titleStyles.css');
+require('../../../styles/movieStyles.css');
 
 const PosterThumbnail = (props) => {
   return (

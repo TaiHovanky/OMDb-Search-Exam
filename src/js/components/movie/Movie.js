@@ -4,8 +4,8 @@ import Details from './Detail';
 import Title from './Title';
 import PosterThumbnail from './PosterThumbnail';
 import Year from './Year';
-import getDetails from '../helpers/getDetails';
-require('../../styles/titleStyles.css');
+import getDetails from '../../helpers/getDetails';
+require('../../../styles/movieStyles.css');
 
 export default class Movie extends React.Component{
   constructor(props) {
