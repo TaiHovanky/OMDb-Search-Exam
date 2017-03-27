@@ -8,9 +8,9 @@ const TitlesList = (props) => {
   });
 
   return (
-    <ul className='titlesList'>
+    <div className='titlesList'>
       {movieList}
-    </ul>
+    </div>
   )
 }
 

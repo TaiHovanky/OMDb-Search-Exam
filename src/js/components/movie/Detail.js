@@ -3,7 +3,7 @@ require('../../../styles/movieStyles.css');
 
 const Details = (props) => {
   //if any movie detail field is equal to 'N/A', there's no need to display it
-  if(props.movieDetails){
+  if(props.movieDetails) {
     return (
       <div className='filmDetail'>
         {props.movieDetails.Genre !== 'N/A' && <p>{props.movieDetails.Genre}</p>}
