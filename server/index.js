@@ -1,12 +1,7 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-// app.use(bodyParser.json());
+const express = require('express');
+const app = express();
+const path = require('path');
 
 app.use(express.static(path.join(__dirname, '../src/')));
-
-// app.get('/', (req, res) => {
-//   res.status(200).send()
-// })
 
 app.listen(3000);

@@ -3,7 +3,7 @@ import Expand from './Expand';
 require('../../../styles/movieStyles.css');
 
 const Title = (props) => {
-  //positioning of the Title component depends on if there is a poster thumbnail
+  //positioning of the Title component depends on whether there is a poster thumbnail
   return (
     <h3
       className={props.showDetails ? 'noPoster' : props.poster !== 'N/A' ? 'hasPosterThumb' : 'noPoster'}

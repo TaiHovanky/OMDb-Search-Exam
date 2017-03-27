@@ -1,6 +1,13 @@
 # OMDb-Search-Exam
 Search the OMDb API
 
+### Start the application
+- Open a terminal window and navigate to the OMDb-Search-Exam directory. 
+- Run the 'npm install' command to install all dependencies.
+- Run the 'webpack' command.
+- Open another terminal window and navigate to the OMDb-Search-Exam/server directory. Run the 'nodemon index.js' command.
+- In your browser, navigate to http://localhost:3000.
+
 ## Task Details
 - Consume the [OMDb API](http://www.omdbapi.com/) to fetch the top 10 results matching your search query (JSON).
 - Create an interface with at least one input field to be used to search for movies by title.
@@ -47,10 +54,3 @@ http://www.omdbapi.com/?i=tt1229238
 ```
 - Using the `imdbID` provided by the search results will let you fetch the details of a particular movie.
 
-
-### Start the application
-- Open a terminal window and navigate to the OMDb-Search-Exam directory. 
-- Run the 'npm install' command to install all dependencies.
-- Run the 'webpack' command.
-- Open another terminal window and navigate to the OMDb-Search-Exam/server directory. Run the 'nodemon index.js' command.
-- In your browser, navigate to http://localhost:3000.
