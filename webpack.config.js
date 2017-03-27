@@ -3,18 +3,9 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: [
-  './src/js/app.js'
+  'babel-polyfill','./src/js/app.js'
   ],
-  externals: {
-    jquery: 'jQuery'
-  },
   watch: true,
-  plugins: [
-    new webpack.ProvidePlugin({
-      '$': 'jquery',
-      'jQuery': 'jquery'
-    })
-  ],
   output: {
     path: __dirname + '/src/',
     filename: 'bundle.js'
