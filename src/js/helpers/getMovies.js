@@ -6,6 +6,5 @@ export default function getMovies() {
       this.setState({
         movies: results.data.Search || []
       });
-      return;
     });
 }

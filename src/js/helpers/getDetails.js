@@ -31,10 +31,7 @@ export default function getDetails() {
             console.error('could not save to local storage', error);
             //since there's a limit to localStorage's capacity, this catch is used for any errors
           }
-          return;
         });
     }
-  } else {
-    return;
   }
 }
